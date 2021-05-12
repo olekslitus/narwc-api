@@ -1,4 +1,4 @@
-# API for North Atlantic Right Whale Catalog (UNOFFICIAL)
+# API for North Atlantic Right Whale Catalog (unofficial)
 
 ### How to use?
 ...
