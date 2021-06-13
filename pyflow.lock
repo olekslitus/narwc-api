@@ -1,0 +1,71 @@
+[[package]]
+id = 6
+name = "chardet"
+version = "4.0.0"
+source = "pypi+https://pypi.org/pypi/chardet/4.0.0/json"
+dependencies = []
+
+[[package]]
+id = 4
+name = "urllib3"
+version = "1.26.5"
+source = "pypi+https://pypi.org/pypi/urllib3/1.26.5/json"
+dependencies = []
+
+[[package]]
+id = 1
+name = "folium"
+version = "0.12.1"
+source = "pypi+https://pypi.org/pypi/folium/0.12.1/json"
+dependencies = ["branca 0.4.2 pypi+https://pypi.org/pypi/branca/0.4.2/json", "numpy 1.20.3 pypi+https://pypi.org/pypi/numpy/1.20.3/json"]
+
+[[package]]
+id = 9
+name = "MarkupSafe"
+version = "2.0.1"
+source = "pypi+https://pypi.org/pypi/MarkupSafe/2.0.1/json"
+dependencies = []
+
+[[package]]
+id = 12
+name = "requests"
+version = "2.25.1"
+source = "pypi+https://pypi.org/pypi/requests/2.25.1/json"
+dependencies = ["certifi 2021.5.30 pypi+https://pypi.org/pypi/certifi/2021.5.30/json", "urllib3 1.26.5 pypi+https://pypi.org/pypi/urllib3/1.26.5/json", "idna 2.10.0 pypi+https://pypi.org/pypi/idna/2.10.0/json", "chardet 4.0.0 pypi+https://pypi.org/pypi/chardet/4.0.0/json"]
+
+[[package]]
+id = 11
+name = "Jinja2"
+version = "3.0.1"
+source = "pypi+https://pypi.org/pypi/Jinja2/3.0.1/json"
+dependencies = ["MarkupSafe 2.0.1 pypi+https://pypi.org/pypi/MarkupSafe/2.0.1/json"]
+
+[[package]]
+id = 7
+name = "numpy"
+version = "1.20.3"
+source = "pypi+https://pypi.org/pypi/numpy/1.20.3/json"
+dependencies = []
+
+[[package]]
+id = 3
+name = "certifi"
+version = "2021.5.30"
+source = "pypi+https://pypi.org/pypi/certifi/2021.5.30/json"
+dependencies = []
+
+[[package]]
+id = 5
+name = "idna"
+version = "2.10.0"
+source = "pypi+https://pypi.org/pypi/idna/2.10.0/json"
+dependencies = []
+
+[[package]]
+id = 10
+name = "branca"
+version = "0.4.2"
+source = "pypi+https://pypi.org/pypi/branca/0.4.2/json"
+dependencies = ["Jinja2 3.0.1 pypi+https://pypi.org/pypi/Jinja2/3.0.1/json"]
+
+[metadata]

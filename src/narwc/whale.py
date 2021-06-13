@@ -1,7 +1,9 @@
+"""..."""
+
 from __future__ import annotations
+from typing import List, Dict, Optional
 from enum import Enum
-from typing import List, Dict, Iterator, Optional
-import requests
+from narwc.sighting import Sighting
 
 WhaleID = str
 
@@ -19,10 +21,6 @@ class Gender(Enum):
             return Gender.M
         else:
             raise ValueError(f'gender_code: {gender_code}')
-
-class Sighting:
-    """Sighting of a Whale"""
-    pass
 
 class Whale:
     """One Whale in North Atlantic Right Whale Catalog"""
@@ -70,31 +68,3 @@ class Whale:
 
     def sightings(self) -> List[Sighting]:
         raise NotImplementedError
-
-class Catalog:
-    """Main access point to North Atlantic Right Whale Catalog"""
-
-    HOME_ULR = 'https://rwcatalog.neaq.org'
-    WHALES_PATH = 'whales'
-
-    def whales() -> Iterator[Whale]:
-        """Iterator over all whales in the catalog"""
-        for whale_id in Catalog.whale_ids():
-            yield Catalog.whale(whale_id)
-
-    def whale_ids() -> List[WhaleID]:
-        """Iterator over all whales ids in the catalog"""
-        r = requests.get(Catalog.HOME_ULR + 
-                         '/' + Catalog.WHALES_PATH)
-        entries: Dict[str, WhaleID] = r.json()
-        for entry in entries:
-            yield entry['egNo']
-
-    def whale(whale_id: WhaleID) -> Optional[Whale]:
-        """Get Whale with given `whale_id`"""
-        r = requests.get(Catalog.HOME_ULR + 
-                         '/' + Catalog.WHALES_PATH + 
-                         '/' + str(whale_id))
-        if r.status_code != 200: return None
-        whale_data: Dict = r.json()
-        return Whale(whale_id, whale_data)
