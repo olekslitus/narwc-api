@@ -17,7 +17,7 @@ for whale in narwc.Catalog.whales():
 ```
 
 ## Documentation
-WIP
+...
 
 ## Development
 ### Contributing
