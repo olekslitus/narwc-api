@@ -1,6 +1,6 @@
-# API for North Atlantic Right Whale Catalog (unofficial)
+# Python API for North Atlantic Right Whale Catalog
 
-`narwc-api` is a Python library to access [North Atlantic Right Whale Catalog](https://rwcatalog.neaq.org).
+`narwc-api` is a Python library to access [North Atlantic Right Whale Catalog](https://rwcatalog.neaq.org). \
 This library enables you to access the whales from the catalog in your Python applications.
 
 ## Install
